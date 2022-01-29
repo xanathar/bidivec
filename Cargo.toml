@@ -1,6 +1,6 @@
 [package]
 name = "bidivec"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2018"
 # The minimum version for this to compile is 1.40 (you might get lucky
 # with previous versions, though).
