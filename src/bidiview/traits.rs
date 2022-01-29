@@ -86,7 +86,7 @@ pub trait BidiView: Index<(usize, usize)> {
     where
         Self: Sized,
         Self::Output: PartialEq + Sized + std::fmt::Debug,
-        V: BidiView<Output=Self::Output>,
+        V: BidiView<Output = Self::Output>,
     {
         for y in 0..self.height() {
             for x in 0..self.width() {
@@ -94,7 +94,6 @@ pub trait BidiView: Index<(usize, usize)> {
             }
             println!();
         }
-
 
         if other.width() != self.width() || other.height() != self.height() {
             false
@@ -488,7 +487,6 @@ pub trait BidiFrom<S>: Sized {
     /// using the specified region of another BidiView as the source of data.
     fn from_view_cut(source: S, cut: &BidiRect) -> Result<Self, BidiError>;
 }
-
 
 #[allow(dead_code)]
 fn canary_trait_object_safe_bidiview(_: &dyn BidiView<Output = ()>) -> ! {
