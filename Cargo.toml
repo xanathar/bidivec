@@ -1,0 +1,25 @@
+[package]
+name = "bidivec"
+version = "0.1.0"
+edition = "2018"
+# The minimum version for this to compile is 1.40 (you might get lucky
+# with previous versions, though).
+# However to run tests and support most of the most common features,
+# Rust 1.53 or later is recommended (for array::into_iter()).
+rust-version = "1.40"
+authors = ["Marco Mastropaolo <marco@mastropaolo.com>"]
+description = "A crate offering bidimensional arrays, vectors and slices, with batteries included (such as pathfinding, flood-filling and more)."
+readme = "README.md"
+homepage = "https://github.com/xanathar/bidivec"
+repository = "https://github.com/xanathar/bidivec"
+license = "MIT OR Apache-2.0"
+keywords = ["bidimensional", "vector", "2d", "gamedev", "pathfinding"]
+categories = ["algorithms", "data-structures", "graphics", "game-development"]
+publish = true
+
+[dependencies]
+rustversion = "1.0"
+thiserror = "1.0"
+
+[dev-dependencies]
+rand = "0.8.4"
