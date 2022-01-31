@@ -1,5 +1,7 @@
 # bidivec
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/xanathar/bidivec/Rust?label=CI) ![Crates.io](https://img.shields.io/crates/v/bidivec) ![docs.rs](https://img.shields.io/docsrs/bidivec) ![Crates.io](https://img.shields.io/crates/d/bidivec) ![Crates.io](https://img.shields.io/crates/l/bidivec) 
+
 A crate offering bidimensional arrays, vectors and slices, with batteries included.
 The crate tries to be as generic as possible, and after this, to be reasonably optimized.
 
